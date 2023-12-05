@@ -1,0 +1,7 @@
+{
+  "loginPage": {
+    "emailValidationMsg": "h3[data-test='error']",
+    "productLabel":".title"
+  }
+
+}
