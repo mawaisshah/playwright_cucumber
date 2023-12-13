@@ -1,4 +1,4 @@
-@swagLabs
+@swagLabsLogin
 Feature: Login
 
   Scenario Outline: Verify the login functionality using different credentials

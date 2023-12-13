@@ -1,7 +1,17 @@
 {
   "loginPage": {
+    "emailField":"#user-name",
+    "passwordField":"#password",
     "emailValidationMsg": "h3[data-test='error']",
+    "loginBtn":"#login-button",
     "productLabel":".title"
+  },
+  "productPage":{
+    "sortDropdown":".product_sort_container",
+    "sortedBy":".product_sort_container option:checked",
+    "addToCartBtn":"#add-to-cart-sauce-labs-backpack",
+    "cartIcon":"span.shopping_cart_badge",
+    "removeBtn":"button[data-test='remove-sauce-labs-backpack']"
   }
 
 }

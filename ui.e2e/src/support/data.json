@@ -1,7 +1,12 @@
 {
-  "login": {
+  "loginPage": {
     "expectedEmailValidation": "Epic sadface: Username and password do not match any user in this service",
-    "expectedLabel":"Products"
+    "expectedLabel":"Products",
+    "email":"standard_user",
+    "password":"secret_sauce"
     
+  },
+  "productPage":{
+    "number":"1"
   }
 }

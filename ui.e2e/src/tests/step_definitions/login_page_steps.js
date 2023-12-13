@@ -6,15 +6,21 @@ const { baseURL } = config.default;
 const selectors = require("../../support/selectors.json");
 const data = require("../../support/data.json");
 setDefaultTimeout(20 * 1000);
-const { emailValidationMsg, productLabel } = selectors.loginPage;
-const { expectedEmailValidation, expectedLabel } = data.login;
+const {
+  emailField,
+  passwordField,
+  emailValidationMsg,
+  productLabel,
+  loginBtn,
+} = selectors.loginPage;
+const { expectedEmailValidation, expectedLabel } = data.loginPage;
 Given("a login page", async function () {
   await fixture.page.goto(baseURL);
 });
 When("user enters {string} and {string}", async function (email, password) {
-  await fixture.page.locator("#user-name").type(email);
-  await fixture.page.locator("#password").type(password);
-  const sumbitBtn = await fixture.page.locator("#login-button");
+  await fixture.page.locator(emailField).type(email);
+  await fixture.page.locator(passwordField).type(password);
+  const sumbitBtn = await fixture.page.locator(loginBtn);
   await sumbitBtn.click();
 });
 Then(
