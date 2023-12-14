@@ -12,6 +12,16 @@
     "addToCartBtn":"#add-to-cart-sauce-labs-backpack",
     "cartIcon":"span.shopping_cart_badge",
     "removeBtn":"button[data-test='remove-sauce-labs-backpack']"
+  },
+  "checkoutPage":{
+    "checkoutBtn":"button.btn.btn_action",
+    "firstNameField":"#first-name",
+    "lastNameField":"#last-name",
+    "postalcodeField":"#postal-code",
+    "continueBtn":"#continue",
+    "finishBtn":"#finish",
+    "orderSubmitted":".complete-header",
+    "orderCompleted":"span.title"
   }
 
 }

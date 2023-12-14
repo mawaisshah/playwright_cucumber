@@ -23,3 +23,9 @@ Feature: Products
     When the user clicks "Add to cart"
     And clicks the "Remove"
     Then the product should be successfully removed from the cart
+
+  Scenario: Verify the user is able to checkout the product in the cart
+    Given a product page
+    When the user clicks "Add to cart"
+    And proceed to checkout with the selected product
+    Then the product should be successfully checked out

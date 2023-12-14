@@ -8,5 +8,12 @@
   },
   "productPage":{
     "number":"1"
+  },
+  "checkoutPage":{
+    "fName":"John",
+    "lName":"Berk",
+    "pCode":"1142",
+    "completed":"Checkout: Complete!"
+
   }
 }
